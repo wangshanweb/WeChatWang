@@ -1,0 +1,78 @@
+<!--logs.wxml首页-->
+<view class="slider">
+<!--indicator-dots轮播圆点  interval轮播时间  autoplay自动播放-->
+   <swiper autoplay interval="3500" indicator-dots>
+      <swiper-item wx:for="{{imagelist}}" wx:key="id">
+        <image src="{{item.img_url}}" mode="aspectFill" lazy-load width="375px" height="150px"/>
+      </swiper-item>
+   </swiper>
+</view>
+<!--首页导航分区-->
+<view class="index-nav ">
+      <navigator class="nav-item bdr">
+        <image src="/assets/icons/91.png" />
+        <text>领福利</text>
+      </navigator>
+      <navigator class="nav-item bdr">
+        <image src="/assets/icons/92.png" />
+        <text>拼团</text>
+      </navigator>
+      <navigator class="nav-item ">
+        <image src="/assets/icons/93.png" />
+        <text>好物秒杀</text>
+      </navigator>
+      <navigator class="nav-item bdr">
+        <image src="/assets/icons/94.png" />
+        <text>妈咪问答</text>
+      </navigator>
+      <navigator class="nav-item bdr">
+        <image src="/assets/icons/95.png" />
+        <text>早教</text>
+      </navigator>
+      <navigator class="nav-item">
+        <image src="/assets/icons/96.png" />
+        <text>小常识</text>
+      </navigator>
+      <navigator class="nav-item bdr">
+        <image src="/assets/icons/97.png" />
+        <text>妈咪兼职</text>
+      </navigator>
+      <navigator class="nav-item bdr">
+        <image src="/assets/icons/98.png" />
+        <text>宝宝相册</text>
+      </navigator>
+      <navigator class="nav-item">
+        <image src="/assets/icons/99.png" />
+        <text>宝宝性格</text>
+      </navigator>
+</view>
+<!--灰色条-->
+<view class="divider">
+  
+</view>
+<!--入口区域-->
+<view class="index-enter">
+  <navigator  class="enter-item">
+    <image src="/assets/images/juan1.png" />
+  </navigator>
+  <navigator class="enter-item">
+    <image src="/assets/images/juan2.png" />
+  </navigator>
+  <navigator class="enter-item">
+    <image src="/assets/images/juan3.png" />
+  </navigator>
+</view>
+<!--灰色条-->
+<view class="divider"></view> 
+<view class="goods">
+  <image src="/assets/images/tangguo.png" /><image src="/assets/images/tangguo1.png" /><text>好物推荐</text><image src="/assets/images/tangguo1.png" /><image src="/assets/images/tangguo.png" />
+</view>
+<view class="list">
+  <navigator class="list-item" wx:for="{{goodslist}}" wx:key="id">
+    <image src="{{item.img_url}}" mode="aspectFill" />
+    <text class="gtitle">{{item.title}}</text>
+    <view>
+      <text class="new">￥{{item.newPrice}}</text> <text class="old">￥{{item.oldPrice}}</text>
+    </view> 
+  </navigator>
+</view>

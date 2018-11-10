@@ -1,0 +1,4 @@
+/* pages/contact/contact.wxss */
+.zhuce{
+   margin: 0 auto;
+}

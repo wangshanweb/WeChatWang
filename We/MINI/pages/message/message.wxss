@@ -1,0 +1,41 @@
+/* 网页背景灰色*/
+page{
+    background-color:#f1f1f1;
+}
+/*卡片的区域块布局*/
+.card{
+    background-color: #fff;
+    border-radius: 15rpx;
+    border: 1px solid #ddd;
+    margin: 60rpx 20rpx;/*补丁*/
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column;
+}
+.card-title{
+    font-size: 20px;
+    margin-bottom: 20rpx;
+}
+.card-date{
+    font-size: 14px;
+    color: #ccc;
+    border-bottom:1px solid #ccc;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx; 
+}
+.card-img{
+    width:100%;
+    height: 500rpx;
+}
+.card-desc{
+    font-size: 16px;
+    margin-top:20rpx;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20rpx; 
+    color: #333;
+}
+.card-read{
+    font-size: 14px;
+    margin-top: 20rpx;
+    color: #666;
+}

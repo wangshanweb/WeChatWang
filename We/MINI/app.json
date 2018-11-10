@@ -1,0 +1,49 @@
+{
+  "pages": [ 
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/index/index",
+    "pages/profile/profile",
+     "pages/detail/detail", 
+      "pages/contact/contact"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "母婴商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#000",
+    "selectColor": "#fc0",
+    "backgroundColor": "#fff",
+    "borderStyle": "#000",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "首页",
+        "iconPath": "assets/tabs/tab2.png",
+        "selectedIconPath": "assets/tabs/tab22.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "商城",
+        "iconPath": "assets/tabs/tab1.png",
+        "selectedIconPath": "assets/tabs/tab11.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "assets/tabs/tab3.png",
+        "selectedIconPath": "assets/tabs/tab33.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "联系我们",
+        "iconPath": "assets/tabs/tab4.png",
+        "selectedIconPath": "assets/tabs/tab44.png"
+      }
+    ]
+  }
+}

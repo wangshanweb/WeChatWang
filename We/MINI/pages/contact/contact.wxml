@@ -1,0 +1,29 @@
+<!--pages/contact/contact.wxml-->
+<view class="divider">
+    
+</view>
+<view class="cell">
+    <form bindsubmit="submitHandle">
+        <view class="cell-item arrow" >
+            <text>添加用户信息</text>
+        </view>
+        <view class="cell-item arrow">
+            <input type="text" name="uname" placeholder="请输入用户名"/>
+        </view>
+        <view class="cell-item arrow">
+            <input type="password" name="upwd" placeholder="请输入密码"/>
+        </view> 
+        <view class="cell-item">
+        <radio-group>
+            <radio name="r" checked value="male"/>男
+            <radio name="r" value="female"/>女            
+        </radio-group>
+    </view>
+        <view class="cell-item arrow">
+        <navigator url="/pages/detail/detail" class="zhuce">
+            <button formType="submit" >注册</button></navigator>
+        </view>
+    </form>
+</view>
+<view class="divider">
+</view>

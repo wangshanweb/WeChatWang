@@ -1,0 +1,8 @@
+<!--pages/message/message.wxml-->
+<view class="card" wx:for="{{infoList}}" wx:key="index">
+    <text class="card-title">{{item.title}}</text>
+    <text class="card-date">{{item.date}}</text>
+    <image src="{{item.img_url}}"  mode="aspectFill" lazy-load class="card-img"/>
+    <text class="card-desc">{{item.desc}}</text>
+    <navigator url="/pages/detail/detail" class="card-read arrow">查看详情</navigator>  
+</view>
